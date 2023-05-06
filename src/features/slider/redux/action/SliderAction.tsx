@@ -1,6 +1,6 @@
 import { IEntertainmentData } from "../../../../interface/EntertainmentDataInterface";
 import { AppDispatch } from "../../../../redux/Store";
-import { CoverType } from "../../interface/SliderInterface";
+import { CardType } from "../../interface/SliderInterface";
 import { loadMetaDataAPI, loadMetaDataAPIMock } from "../../services/SliderAPI";
 import {
   clearSliderStore,

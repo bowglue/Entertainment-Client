@@ -4,7 +4,7 @@ import { ICoverCardProps } from "../../../interface/EntertainmentDataInterface";
 import PosterProvider from "../context/PosterContext";
 import usePosterHoverController from "../hooks/usePosterHoverController";
 import useWideHoverController from "../hooks/useWideHoverController";
-import { CoverType, HoverControllerType } from "../interface/SliderInterface";
+import { CardType, HoverControllerType } from "../interface/SliderInterface";
 
 export interface ISliderMapping {
   Item: React.FC<ICoverCardProps>;
@@ -12,7 +12,7 @@ export interface ISliderMapping {
   hoverController: HoverControllerType;
 }
 
-export const Item_Mapping: Map<CoverType, ISliderMapping> = new Map([
+export const Item_Mapping: Map<CardType, ISliderMapping> = new Map([
   [
     "wide",
     {

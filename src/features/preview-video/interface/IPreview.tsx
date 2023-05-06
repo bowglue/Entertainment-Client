@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import { IEntertainmentData } from "../../../interface/EntertainmentDataInterface";
-import { CoverType } from "../../slider/interface/SliderInterface";
+import { CardType } from "../../slider/interface/SliderInterface";
 
 export interface IPreviewState {
   previewData: IPreviewPayload;
@@ -13,7 +13,7 @@ export interface IPreviewPayload {
   metadata: IEntertainmentData | null;
   previewBounding: IPreviewBounding | null;
   windowData: IWindowData | null;
-  type: CoverType | null;
+  type: CardType | null;
 }
 
 export interface IPreviewBounding {

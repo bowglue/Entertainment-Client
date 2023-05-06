@@ -1,14 +1,14 @@
 import axios from "axios";
 import { IEntertainmentData } from "../../../interface/EntertainmentDataInterface";
 import { Data } from "../../../utils/SliderData";
-import { CoverType } from "../interface/SliderInterface";
+import { CardType } from "../interface/SliderInterface";
 
 interface LoadSliderMetadata {
   metadata: IEntertainmentData[];
   maxItems: number;
 }
 export function loadMetaDataAPIMock(
-  type: CoverType
+  type: CardType
 ): Promise<LoadSliderMetadata> {
   return new Promise((resolve, reject) => {
     const metadata = Data;
