@@ -1,9 +1,9 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/home", "dest": "/" },
-    { "src": "/movie", "dest": "/" },
-    { "src": "/game", "dest": "/" },
-    { "src": "/tv show", "dest": "/" }
+  "rewrites": [
+    { "src": "/", "destination": "/" },
+    { "src": "/home", "destination": "/" },
+    { "src": "/movie", "destination": "/" },
+    { "src": "/game", "destination": "/" },
+    { "src": "/tv show", "destination": "/" }
   ]
 }
