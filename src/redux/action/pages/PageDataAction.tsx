@@ -9,7 +9,6 @@ export const loadPageDataAction =
   (page: string, cancelToken: CancelTokenSource) => (dispath: AppDispatch) => {
     loadPageDataAPI(page, cancelToken)
       .then((data: IPageData) => {
-        console.log(data);
         const paylaod = { header: [], rows: data.rows };
         dispath(loadPageData(data));
       })
@@ -17,7 +16,6 @@ export const loadPageDataAction =
   };
 
 export const clearPageDataAction = () => (dispatch: AppDispatch) => {
-  console.log("Clear Entertainment Data");
   dispatch(clearPageData());
 };
 
