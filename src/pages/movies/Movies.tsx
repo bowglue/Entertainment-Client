@@ -33,7 +33,7 @@ function Movies() {
       </Main.Header>
       <Main.Genres>Movies Genres</Main.Genres>
       <Main.Sliders>
-        {rows.length > 0 &&
+        {rows &&
           rows.map((row) => {
             return (
               <SliderProvider key={row.sliderId} sliderMapping={row}>
