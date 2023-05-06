@@ -21,7 +21,6 @@ interface RecommendationProps {
   metadata: IEntertainmentData;
 }
 const Recommendation = ({ metadata }: RecommendationProps) => {
-  const { recommendations } = metadata;
   return (
     <>
       <DetailsSectionHeader>More Like This</DetailsSectionHeader>

@@ -8,6 +8,8 @@ export const HeaderData: IEntertainmentData[] = [
     poster: "",
     focus: "https://i.imgur.com/CEzkVHB.jpg",
     logo: "https://i.imgur.com/rMhgwsj.png",
+    genres: "Action,Adventure",
+    releaseDate: 2015,
   },
   {
     id: 1,
@@ -16,6 +18,8 @@ export const HeaderData: IEntertainmentData[] = [
     poster: "",
     focus: "https://i.imgur.com/FHZe38F.jpg",
     logo: "https://i.imgur.com/2iQSmkS.png",
+    genres: "Action,Adventure",
+    releaseDate: 2015,
   },
   {
     id: 2,
@@ -24,6 +28,8 @@ export const HeaderData: IEntertainmentData[] = [
     poster: "",
     focus: "https://i.imgur.com/LuzQ0Nt.jpg",
     logo: "https://i.imgur.com/bEbI3MA.png",
+    genres: "Action,Adventure",
+    releaseDate: 2015,
   },
   {
     id: 3,
@@ -32,6 +38,8 @@ export const HeaderData: IEntertainmentData[] = [
     poster: "",
     focus: "https://i.imgur.com/mAr3z2g.jpg",
     logo: "https://i.imgur.com/ugtb7ts.png",
+    genres: "Action,Adventure",
+    releaseDate: 2015,
   },
   {
     id: 4,
@@ -40,5 +48,7 @@ export const HeaderData: IEntertainmentData[] = [
     poster: "",
     focus: "https://i.imgur.com/oyLoGH2.jpg",
     logo: "https://i.imgur.com/31hbZx5.png",
+    genres: "Action,Adventure",
+    releaseDate: 2015,
   },
 ];
