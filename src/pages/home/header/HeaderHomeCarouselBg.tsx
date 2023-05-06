@@ -7,13 +7,13 @@ interface IHeaderHomeCarouselBg {
 }
 
 function HeaderHomeCarouselBg({ currentIndex, data }: IHeaderHomeCarouselBg) {
-  if (data.length === 0) return null;
   return (
     <>
       {data.map((header, index) => {
         const isVisible = index === currentIndex;
         return (
-          isVisible && <HeaderHomeBg key={header.title} src={header.focus} />
+          isVisible &&
+          data && <HeaderHomeBg key={header.title} src={header.focus} />
         );
       })}
     </>

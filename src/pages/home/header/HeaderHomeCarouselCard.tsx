@@ -41,16 +41,17 @@ function HeaderHomeCarouselCard({
   return (
     <HeaderHomeCarouselCardContainer>
       <HeaderHomeCarouselCardMask>
-        {data.map((header, index) => {
-          const isVisible = index === currentIndex;
-          return (
-            <HeaderHomeCard
-              key={header.title}
-              data={header}
-              isVisible={isVisible}
-            />
-          );
-        })}
+        {data &&
+          data.map((header, index) => {
+            const isVisible = index === currentIndex;
+            return (
+              <HeaderHomeCard
+                key={header.title}
+                data={header}
+                isVisible={isVisible}
+              />
+            );
+          })}
       </HeaderHomeCarouselCardMask>
     </HeaderHomeCarouselCardContainer>
   );
