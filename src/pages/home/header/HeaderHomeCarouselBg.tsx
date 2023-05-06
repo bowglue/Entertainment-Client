@@ -7,6 +7,7 @@ interface IHeaderHomeCarouselBg {
 }
 
 function HeaderHomeCarouselBg({ currentIndex, data }: IHeaderHomeCarouselBg) {
+  if (data.length === 0) return null;
   return (
     <>
       {data.map((header, index) => {
