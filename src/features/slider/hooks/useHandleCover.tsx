@@ -1,7 +1,7 @@
-import { IData } from "../../../interface/EntertainmentDataInterface";
+import { IEntertainmentData } from "../../../interface/EntertainmentDataInterface";
 
 interface HandleCoverProps {
-  onMouseEnter?: (args0: IData) => void;
+  onMouseEnter?: (args0: IEntertainmentData) => void;
   onMouseLeave?: () => void;
   cover: string;
   logo: string;
@@ -14,7 +14,7 @@ const usehandleCover = ({
   logo,
   request,
 }: HandleCoverProps) => {
-  function handleMouseEnter(updatedMetadata: IData) {
+  function handleMouseEnter(updatedMetadata: IEntertainmentData) {
     if (onMouseEnter) {
       onMouseEnter(updatedMetadata);
     }

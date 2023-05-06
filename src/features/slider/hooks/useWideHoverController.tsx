@@ -1,5 +1,5 @@
 import { useAppDispatch } from "../../../hooks/ReduxHooks";
-import { IData } from "../../../interface/EntertainmentDataInterface";
+import { IEntertainmentData } from "../../../interface/EntertainmentDataInterface";
 import {
   IPreviewPayload,
   previewActionPayload,
@@ -14,7 +14,7 @@ const useWideHoverController = ({
   itemID,
 }: IHoverControllerProps) => {
   const dispatch = useAppDispatch();
-  function handleHover(metadata: IData) {
+  function handleHover(metadata: IEntertainmentData) {
     if (!itemRef.current) return;
     const previewBounding = handlePreviewBounding(itemRef.current);
     const windowData = handleWindowData();

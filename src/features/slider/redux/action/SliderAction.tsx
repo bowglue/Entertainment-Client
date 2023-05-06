@@ -1,4 +1,4 @@
-import { IData } from "../../../../interface/EntertainmentDataInterface";
+import { IEntertainmentData } from "../../../../interface/EntertainmentDataInterface";
 import { AppDispatch } from "../../../../redux/Store";
 import { CoverType } from "../../interface/SliderInterface";
 import { loadMetaDataAPI, loadMetaDataAPIMock } from "../../services/SliderAPI";
@@ -31,11 +31,11 @@ export const loadMetaDataOnStartAction =
     });
   };
 
-function repeatArray(arr: IData[], n: number) {
+function repeatArray(arr: IEntertainmentData[], n: number) {
   return Array.from({ length: arr.length * n }, (_, i) => arr[i % arr.length]);
 }
 
-function keys(arr: IData[]) {
+function keys(arr: IEntertainmentData[]) {
   return arr.map((item, index) => {
     return {
       ...item,

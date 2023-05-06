@@ -1,10 +1,10 @@
 import axios from "axios";
-import { IData } from "../../../interface/EntertainmentDataInterface";
+import { IEntertainmentData } from "../../../interface/EntertainmentDataInterface";
 import { Data } from "../../../utils/SliderData";
 import { CoverType } from "../interface/SliderInterface";
 
 interface LoadSliderMetadata {
-  metadata: IData[];
+  metadata: IEntertainmentData[];
   maxItems: number;
 }
 export function loadMetaDataAPIMock(
@@ -21,7 +21,7 @@ export function loadMetaDataAPIMock(
 
 export async function loadMetaDataAPI(
   entertainmentType: string
-): Promise<IData[]> {
+): Promise<IEntertainmentData[]> {
   const url = "/api/v1/entertainment/type/" + entertainmentType;
   const headers = { "Content-Type": "application/json" };
   const { data } = await axios.get(url, { headers: headers });

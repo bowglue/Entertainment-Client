@@ -7,7 +7,7 @@ import { PreviewCardProps } from "../features/preview-video/interface/IPreview";
 import { IEntertainmentData } from "../interface/EntertainmentDataInterface";
 import { GradientCover } from "./Gradient";
 
-// export const handleCover = (type: string, video: IData) => {
+// export const handleCover = (type: string, video: IEntertainmentData) => {
 //   if (type === "wide")
 //     return (
 //       <WideCard video={video}>

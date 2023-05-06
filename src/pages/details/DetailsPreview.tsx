@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import LoadingItem from "../../components/LoadingItem";
 import { getPreviewVideoAPI } from "../../features/preview-video/services/PreviewModalAPI";
-import { IData } from "../../interface/EntertainmentDataInterface";
+import { IEntertainmentData } from "../../interface/EntertainmentDataInterface";
 import { IPreviewDataMock } from "../../utils/PreviewData";
 import VideoPlayer from "../../features/video-player/components/VideoPlayer";
 
@@ -24,7 +24,7 @@ const Preview = styled.video`
 `;
 
 interface DetailsPreviewProps {
-  metadata: IData;
+  metadata: IEntertainmentData;
 }
 
 const DetailsPreview = ({ metadata }: DetailsPreviewProps) => {

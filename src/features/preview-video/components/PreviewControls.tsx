@@ -7,7 +7,7 @@ import Divider from "../../../components/Divider";
 import FavoriteIcon from "../../../components/FavoriteIcon";
 import SoundIcon from "../../../components/SoundIcon";
 import { useAppDispatch, useAppSelector } from "../../../hooks/ReduxHooks";
-import { IData } from "../../../interface/EntertainmentDataInterface";
+import { IEntertainmentData } from "../../../interface/EntertainmentDataInterface";
 import {
   setBookmarksAction,
   setSoundAction,
@@ -26,14 +26,14 @@ const PreviewControlsContainer = styled.div`
 `;
 
 interface PreviewControlsProps {
-  metadata: IData;
+  metadata: IEntertainmentData;
 }
 
 const PreviewControls = ({ metadata }: PreviewControlsProps) => {
   const dispatch = useAppDispatch();
   const { sound, bookmarks } = useAppSelector((state) => state.GlobalReducer);
   const isBookemarked = bookmarks.some(
-    (bookmark: IData) => bookmark.id === metadata.id
+    (bookmark: IEntertainmentData) => bookmark.id === metadata.id
   );
 
   return (

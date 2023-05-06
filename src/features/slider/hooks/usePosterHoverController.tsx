@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../../hooks/ReduxHooks";
-import { IData } from "../../../interface/EntertainmentDataInterface";
+import { IEntertainmentData } from "../../../interface/EntertainmentDataInterface";
 import {
   IPreviewPayload,
   previewActionPayload,
@@ -37,7 +37,7 @@ const usePosterHoverController = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [translatePoster]);
 
-  function handleHover(metadata: IData) {
+  function handleHover(metadata: IEntertainmentData) {
     updatePosterID(itemID);
     if (!itemRef.current) return;
     const previewBounding = handlePreviewBounding(itemRef.current);
