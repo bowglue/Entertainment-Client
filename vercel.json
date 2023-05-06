@@ -1,9 +1,3 @@
 {
-  "rewrites": [
-    { "src": "/", "destination": "/" },
-    { "src": "/home", "destination": "/" },
-    { "src": "/movie", "destination": "/" },
-    { "src": "/game", "destination": "/" },
-    { "src": "/tv show", "destination": "/" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
