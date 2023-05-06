@@ -1,0 +1,28 @@
+:root {
+  margin: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  overflow-y: overlay;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1em;
+}
