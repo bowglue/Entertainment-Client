@@ -30,13 +30,14 @@ function Games() {
         <HeaderHome />
       </Main.Header>
       <Main.Sliders>
-        {rows.map((row) => {
-          return (
-            <SliderProvider key={row.sliderId} sliderMapping={row}>
-              <Slider />
-            </SliderProvider>
-          );
-        })}
+        {rows &&
+          rows.map((row) => {
+            return (
+              <SliderProvider key={row.sliderId} sliderMapping={row}>
+                <Slider />
+              </SliderProvider>
+            );
+          })}
         <PreviewModal />
       </Main.Sliders>
     </>
