@@ -120,7 +120,6 @@ function SliderCarousel({ showButton }: SliderCarouselProps) {
     return [...arr.slice(count, arr.length), ...arr.slice(0, count)];
   }
 
-  if (entertainmentData.length === 0) return null;
   return (
     <SliderCarouselContainer>
       {hasTranslate && (

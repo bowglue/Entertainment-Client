@@ -33,13 +33,14 @@ function Movies() {
       </Main.Header>
       <Main.Genres>Movies Genres</Main.Genres>
       <Main.Sliders>
-        {rows.map((row) => {
-          return (
-            <SliderProvider key={row.sliderId} sliderMapping={row}>
-              <Slider />
-            </SliderProvider>
-          );
-        })}
+        {rows.length > 0 &&
+          rows.map((row) => {
+            return (
+              <SliderProvider key={row.sliderId} sliderMapping={row}>
+                <Slider />
+              </SliderProvider>
+            );
+          })}
         <PreviewModal />
         <AdsComponent dataAdSlot={"X7XXXXXX5X"} />
       </Main.Sliders>
