@@ -28,7 +28,9 @@ function Movies() {
 
   return (
     <>
-      <Main.Header>{/* <HeaderHome /> */}</Main.Header>
+      <Main.Header>
+        <HeaderHome />
+      </Main.Header>
       <Main.Genres>Movies Genres</Main.Genres>
       <Main.Sliders>
         {rows &&

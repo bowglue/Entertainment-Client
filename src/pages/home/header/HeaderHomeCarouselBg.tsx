@@ -9,13 +9,13 @@ interface IHeaderHomeCarouselBg {
 function HeaderHomeCarouselBg({ currentIndex, data }: IHeaderHomeCarouselBg) {
   return (
     <>
-      {data.map((header, index) => {
-        const isVisible = index === currentIndex;
-        return (
-          isVisible &&
-          data && <HeaderHomeBg key={header.title} src={header.focus} />
-        );
-      })}
+      {data &&
+        data.map((header, index) => {
+          const isVisible = index === currentIndex;
+          return (
+            isVisible && <HeaderHomeBg key={header.title} src={header.focus} />
+          );
+        })}
     </>
   );
 }
